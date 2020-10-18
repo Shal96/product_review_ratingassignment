@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>pid</td>
+            
+            <td>review</td>
+            <td>rating</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["pid"]}}</td>
+               
+               <td> {{ row["review"]}}</td>
+               <td>{{row['rating']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>
